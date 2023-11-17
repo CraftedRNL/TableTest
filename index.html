@@ -2,15 +2,19 @@
 <html lang="en">
 <head>
     <style>
-        table, td, th {
-            border: 2px solid rgb(0, 0, 0);
+        td, th {
+            border: 1px solid rgb(0, 0, 0);
             border-style: hidden;
+            width: 0.1%;
+            white-space: nowrap;
+            font-family: Arial, Helvetica, sans-serif;
         }
         table {
             width: 100%;
+            border-style: solid;
         }
         .bigth {
-            background-color: rgb(0, 191, 255);
+            background-color: rgb(1, 111, 148);
             color: white;
             font-size: 20px;
         }
@@ -20,12 +24,17 @@
             text-align: left;
         }
         .greenspecial {
-            background-color: rgb(243, 234, 234);
+            background-color: rgb(245, 241, 241);
             color: green;
             font-weight: bold;
         }
         td {
             background-color: rgb(252, 249, 249);
+        }
+        .redspecial {
+            background-color: rgb(245, 241, 241);
+            font-weight: bold;
+            color: red;
         }
     </style>
     <title>Table 'Test'</title>
@@ -33,7 +42,7 @@
 <body>
     <table>
         <tr>
-            <th class="bigth" colspan="15">GREEN BAY- Current Season Performance</th>
+            <th  class="bigth" colspan="15">GREEN BAY- Current Season Performance</th>
         </tr>
 
         <tr class="halfth">
@@ -79,7 +88,7 @@
         </tr>
         <tr>
             <td>Home Games</td>
-            <td>14-6</td>
+            <td>7-1</td>
             <td>+5.5</td>
             <td>5-3</td>
             <td>5-3</td>
@@ -109,7 +118,7 @@
             <td class="greenspecial">8.0 </td>
             <td>294.0</td>
             <td>(5.2)</td>
-            <td class="greenspecial">2.3 </td>
+            <td class="greenspecial">3.3 </td>
         </tr>
         <tr>
             <td>Grass Games</td>
@@ -165,7 +174,7 @@
             <td class="greenspecial">(7.7)</td>
             <td class="greenspecial">60-359</td>
             <td class="greenspecial">(6)</td>
-            <td>(14.1)</td>
+            <td colspan="2">(14.1)</td>
         </tr>
         <tr>
             <td>Opponents Defensive Avg.</td>
@@ -181,7 +190,7 @@
             <td>(6.5)</td>
             <td>60-328</td>
             <td>(5.5)</td>
-            <td>15.3</td>
+            <td colspan="2">(15.3)</td>
         </tr>
         <tr>
             <td>Offense Home Games</td>
@@ -197,7 +206,7 @@
             <td class="greenspecial">(8.9)</td>
             <td class="greenspecial">58-371</td>
             <td class="greenspecial">(6.4)</td>
-            <td class="greenspecial">(12.2)</td>
+            <td colspan="2" class="greenspecial">(12.2)</td>
         </tr>
         <tr>
             <td>Defense (All Games)</td>
@@ -206,14 +215,14 @@
             <td>16.9</td>
             <td>28:29</td>
             <td>24-109</td>
-            <td>(4.6)</td>
+            <td class="redspecial">(4.6)</td>
             <td>19-33</td>
             <td>56.7%</td>
             <td>200</td>
             <td>(6)</td>
             <td>57-309</td>
             <td>(5.4)</td>
-            <td>(19.6)</td>
+            <td colspan="2">(19.6)</td>
         </tr>
         <tr>
             <td>Opponents Offensive Avg.</td>
@@ -229,67 +238,67 @@
             <td>(6.5)</td>
             <td>61-336</td>
             <td>(5.5)</td>
-            <td>(14.9)</td>
+            <td colspan="2">(14.9)</td>
         </tr>
         <tr>
             <td>Defense Home Games</td>
-            <td>15.4</td>
+            <td class="greenspecial">15.4</td>
             <td>10.6</td>
             <td>17.1</td>
             <td>29:17</td>
             <td>26-116</td>
-            <td>(4.5)</td>
+            <td class="redspecial">(4.5)</td>
             <td>19-33</td>
             <td>56.6%</td>
             <td>195</td>
             <td>(5.8)</td>
             <td>59-311</td>
             <td>(5.3)</td>
-            <td>(20.2)</td>
+            <td colspan="2" class="greenspecial">(20.2)</td>
         </tr>
         <tr>
             <th class="bigth"colspan="15">GREEN BAY - Turnovers, Penalties and Special Teams Statistics</th>
         </tr>
-        <tr>
-            <td></td>
-            <td colspan="4">Turnovers Lost</td>
-            <td colspan="2">Third Downs</td>
-            <td colspan="2">Fourth Downs</td>
-            <td colspan="2">Kickoff Returns</td>
-            <td colspan="2">Punt Returns</td>
-            <td>Penalties</td>
+        <tr class="halfth">
+            <th></th>
+            <th colspan="4">Turnovers Lost</th>
+            <th colspan="2">Third Downs</th>
+            <th colspan="2">Fourth Downs</th>
+            <th colspan="2">Kickoff Returns</th>
+            <th colspan="2">Punt Returns</th>
+            <th colspan="2">Penalties</th>
         </tr>
-        <tr>
-            <td></td>
-            <td>INT</td>
-            <td>FL</td>
-            <td>TO</td>
-            <td>DIFF</td>
-            <td>#-MADE</td>
-            <td>PCT</td>
-            <td>#-MADE</td>
-            <td>PCT</td>
-            <td>KR-YDS</td>
-            <td>YPKR</td>
-            <td>PR-YDS</td>
-            <td>YPPR</td>
-            <td>PEN-YDS</td>
+        <tr class="halfth">
+            <th></th>
+            <th>INT</th>
+            <th>FL</th>
+            <th>TO</th>
+            <th>DIFF</th>
+            <th>#-MADE</th>
+            <th>PCT</th>
+            <th>#-MADE</th>
+            <th>PCT</th>
+            <th>KR-YDS</th>
+            <th>YPKR</th>
+            <th>PR-YDS</th>
+            <th>YPPR</th>
+            <th colspan="2">PEN-YDS</th>
         </tr>
         <tr>
             <td>Stats For (All Games)</td>
-            <td>0.7</td>
+            <td class="greenspecial">0.7</td>
             <td>0.6</td>
-            <td>1.3</td>
-            <td>0.8</td>
+            <td class="greenspecial">1.3</td>
+            <td class="greenspecial">0.8</td>
             <td>13-5</td>
             <td>42.9%</td>
             <td>1-0</td>
             <td>38.5%</td>
             <td>4-71</td>
-            <td>(19.5)</td>
+            <td class="redspecial">(19.5)</td>
             <td>2-18</td>
-            <td>(7.4)</td>
-            <td>5-40</td>
+            <td class="redspecial">(7.4)</td>
+            <td colspan="2" class="greenspecial">5-40</td>
         </tr>
         <tr>
             <td>Opponents Avg. Stats Against</td>
@@ -298,21 +307,21 @@
             <td>1.8</td>
             <td>2.3</td>
             <td>13-5</td>
-            <td>42.9%</td>
+            <td>38.3%</td>
             <td>1-0</td>
             <td>47.1%</td>
             <td>4-89</td>
             <td>(21.7)</td>
             <td>22-2</td>
             <td>(9.6)</td>
-            <td>6-49</td>
+            <td colspan="2">6-49</td>
         </tr>
         <tr>
             <td>Stats For (Home Games)</td>
-            <td>0.7</td>
-            <td>0.5</td>
-            <td>1.2</td>
-            <td>1.5</td>
+            <td class="greenspecial">0.7</td>
+            <td class="greenspecial">0.5</td>
+            <td class="greenspecial">1.2</td>
+            <td class="greenspecial">1.5</td>
             <td>12-6</td>
             <td>47.4%</td>
             <td>1-0</td>
@@ -320,13 +329,13 @@
             <td>4-79</td>
             <td>(19.7)</td>
             <td>3-20</td>
-            <td>(6.8)</td>
-            <td>4-33</td>
+            <td class="redspecial">(6.8)</td>
+            <td colspan="2" class="greenspecial">4-33</td>
         </tr>
         <tr>
             <td>Stats Against (All Games)</td>
-            <td>1.6</td>
-            <td>0.5</td>
+            <td class="greenspecial">1.6</td>
+            <td class="redspecial">0.5</td>
             <td>2.1</td>
             <td></td>
             <td>13.5</td>
@@ -337,7 +346,7 @@
             <td>(21.8)</td>
             <td>2-20</td>
             <td>(9.7)</td>
-            <td>6-49</td>
+            <td colspan="2">6-49</td>
         </tr>
         <tr>
             <td>Opponents Avg. Stats For</td>
@@ -345,7 +354,7 @@
             <td>0.6</td>
             <td>1.7</td>
             <td></td>
-            <td>13-5</td>
+            <td>14-5</td>
             <td>38.6%</td>
             <td>1-0</td>
             <td>51.1%</td>
@@ -353,13 +362,13 @@
             <td>(22.6)</td>
             <td>23-2</td>
             <td>(11.2)</td>
-            <td>6-51</td>
+            <td colspan="2">6-51</td>
         </tr>
         <tr>
             <td>Stats Against (Home Games)</td>
-            <td>2.1</td>
+            <td class="greenspecial">2.1</td>
             <td>0.6</td>
-            <td>2.7</td>
+            <td class="greenspecial">2.7</td>
             <td></td>
             <td>13-5</td>
             <td>39.3%</td>
@@ -369,10 +378,9 @@
             <td>(21)</td>
             <td>2-17</td>
             <td>(9.6)</td>
-            <td>6-46</td>
+            <td colspan="2">6-46</td>
         </tr>
-
         </table>
-    <h2>Average power rating of opponents played: NEW ORLEANS 17.8, GREEN BAY 22.1</h2>
+    <h4>Average power rating of opponents played: NEW ORLEANS 17.8, GREEN BAY 22.1</h4>
 </body>
 </html>
